@@ -4,14 +4,14 @@ Bộ dữ liệu Online Retail II này bao gồm tất cả các giao dịch c�
 
 Dataset source (https://archive.ics.uci.edu/dataset/502/online+retail+ii)
 
-1. Load & làm sạch dữ liệu (cell 0-12)
+1. Load & làm sạch dữ liệu 
 
 Đọc file dữ liệu dạng ARFF (dataset_), parse phần @ATTRIBUTE để lấy tên cột và phần @DATA để lấy dữ liệu. \
 Gán tên cột: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country. \
 Kiểm tra describe(), info(), shape, missing values. \
 Phát hiện và xử lý giá trị âm ở Quantity và Price (chuyển thành trị tuyệt đối bằng .abs()).
 
-2. EDA - Phân tích khám phá (cell 13-17)
+2. EDA - Phân tích khám phá 
 
 Biểu đồ top 10 quốc gia theo số giao dịch. \
 Top StockCode và Description phổ biến nhất. \ 
@@ -19,7 +19,7 @@ Phát hiện outlier bằng phương pháp IQR cho Quantity và Price. \
 Vẽ histogram phân phối đầy đủ + zoom cho cả 2 biến. \
 Cho phép nhập tên quốc gia (input()), sau đó liệt kê top 50 sản phẩm bán chạy nhất tại quốc gia đó.
 
-3. Mô hình dự đoán Customer Churn (cell 18)
+3. Mô hình dự đoán Customer Churn 
 
 Định nghĩa "churn" = khách hàng không mua trong 90 ngày gần nhất. \
 Tạo feature RFM (Recency, Frequency, Monetary) + các đặc trưng khác (CustomerLifetime, PurchaseFrequency...). \
